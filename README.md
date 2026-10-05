@@ -4,7 +4,7 @@ Aplicação web que extrai a paleta de cores predominantes de uma imagem. Envie 
 
 Tudo roda no navegador: a imagem nunca sai do seu computador.
 
-**Acesse:** https://p0sseid0n.me/extractor-de-cores/
+**Acesse:** https://p0sseid0n.github.io/extractor-de-cores/
 
 ![Extrator de Cores com uma paleta de 8 cores extraída de uma ilustração de pôr do sol](docs/screenshot.png)
 
