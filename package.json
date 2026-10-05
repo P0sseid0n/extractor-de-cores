@@ -1,0 +1,17 @@
+{
+  "name": "extrator-de-cores",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "bun@1.2.19",
+  "scripts": {
+    "dev": "bun --bun vite",
+    "build": "tsc && bun --bun vite build",
+    "preview": "bun --bun vite preview",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2"
+  }
+}
