@@ -4,6 +4,8 @@ Aplicação web que extrai a paleta de cores predominantes de uma imagem. Envie 
 
 Tudo roda no navegador: a imagem nunca sai do seu computador.
 
+**Acesse:** https://p0sseid0n.me/extractor-de-cores/
+
 ![Extrator de Cores com uma paleta de 8 cores extraída de uma ilustração de pôr do sol](docs/screenshot.png)
 
 ## Funcionalidades
@@ -87,4 +89,6 @@ Os parâmetros ficam em [`src/config.ts`](src/config.ts):
 
 ## Deploy
 
-O comando `bun run build` gera arquivos estáticos em `dist/`, que podem ser publicados em qualquer hospedagem estática (GitHub Pages, Netlify, Vercel, Cloudflare Pages etc.).
+O site é publicado automaticamente no GitHub Pages a cada push na `main`, pelo workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+
+O comando `bun run build` gera arquivos estáticos em `dist/`, que também podem ser publicados em qualquer outra hospedagem estática (Netlify, Vercel, Cloudflare Pages etc.).
