@@ -1,0 +1,15 @@
+# Normaliza todos os arquivos de texto para LF, no repositório e na cópia de trabalho
+* text=auto eol=lf
+
+# Binários: sem conversão de quebra de linha nem diff textual
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.ico    binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.otf    binary
+*.pdf    binary
