@@ -1,0 +1,62 @@
+.swatches {
+	display: flex;
+	gap: 12px;
+	height: 132px;
+	flex-shrink: 0;
+}
+.swatches > * {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+.slot {
+	border: 2px dashed #c4c4c4;
+	border-radius: 14px;
+}
+
+.swatch {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 2px;
+	padding: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-radius: 14px;
+	cursor: pointer;
+	text-align: left;
+	font-family: inherit;
+	transition:
+		transform 0.15s,
+		box-shadow 0.15s;
+}
+.swatch:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+.swatch:focus-visible {
+	outline: 3px solid var(--ink);
+	outline-offset: 3px;
+}
+.swatch .hex {
+	font-family: 'JetBrains Mono', ui-monospace, monospace;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+}
+.swatch .pct {
+	font-size: 12px;
+	opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+	.swatches {
+		flex-wrap: wrap;
+		height: auto;
+		gap: 8px;
+	}
+	.swatches > * {
+		flex: 1 1 22%;
+		height: 64px;
+	}
+}
