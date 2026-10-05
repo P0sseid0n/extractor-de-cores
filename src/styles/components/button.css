@@ -52,3 +52,11 @@ label.btn:focus-within {
 	background: var(--drop);
 	box-shadow: inset 0 0 0 1.5px var(--ink);
 }
+
+/* Em telas pequenas o botão do GitHub vira só ícone (o texto usa .hide-sm) */
+@media (max-width: 700px) {
+	.btn.ghost {
+		width: 44px;
+		padding: 0;
+	}
+}
