@@ -1,5 +1,7 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  server: { open: true },
-});
+	// Caminhos relativos: o site funciona tanto na raiz quanto em /extractor-de-cores/ (GitHub Pages)
+	base: './',
+	server: { open: true },
+})
