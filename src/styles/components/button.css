@@ -38,3 +38,17 @@ label.btn:focus-within {
 	font-size: 14px;
 	padding: 0 16px;
 }
+/* Variante secundária: contorno, sem fundo */
+.btn.ghost {
+	background: transparent;
+	color: var(--ink);
+	box-shadow: inset 0 0 0 1.5px var(--line);
+	text-decoration: none;
+	transition:
+		background 0.15s,
+		box-shadow 0.15s;
+}
+.btn.ghost:hover {
+	background: var(--drop);
+	box-shadow: inset 0 0 0 1.5px var(--ink);
+}
